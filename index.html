@@ -1,0 +1,78 @@
+<!-- hemantc09 version 1.0  -->
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title>My gallery</title>
+<link rel="stylesheet" href="css/index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/customcss.css">
+<link rel="stylesheet" href="css/index.css">
+<!--<link rel="stylesheet" href="css/home.css">-->
+<!--<script type="text/javascript" src="home.js"></script>-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+<body>
+
+<div id="myNav" class="overlay">
+    <a class="close" onclick="closeNav()">X</a>
+    <div class="overlay-content">
+        <a href="home.html">My Gallery</a>
+        <a href="#">Contact</a>
+    </div>
+</div>
+
+
+
+<div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>My Gallery</h1>
+
+        </div>
+    </div>
+    <div class="menuCss">
+        <ul class="topnav">
+            <li class="left"><a class="active" onclick="openNav()">Menu</a></li>
+            <li class="right"><a href="#home">Home</a></li>
+            <li class="right"><a href="#contact">Contact</a></li>
+            <li class="right"><a href="#about">About</a></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div id="two">
+            <div class="thumbnails">
+                <img onmouseover="preview.src=img1.src" name="img1" src="images/File1.png" alt=""/>
+                <img onmouseover="preview.src=img2.src" name="img2" src="images/File2.png" alt=""/>
+                <img onmouseover="preview.src=img3.src" name="img3" src="images/File3.png" alt=""/>
+                <img onmouseover="preview.src=img4.src" name="img4" src="images/File4.png" alt=""/>
+                <img onmouseover="preview.src=img5.src" name="img5" src="images/File5.png" alt=""/>
+                <img onmouseover="preview.src=img6.src" name="img6" src="images/File6.png" alt=""/>
+                <img onmouseover="preview.src=img7.src" name="img7" src="images/File7.png" alt=""/>
+                <img onmouseover="preview.src=img8.src" name="img8" src="images/File8.png" alt=""/>
+
+            </div><br/>
+
+            <div class="preview" align="center">
+                <img class="enlarge" name="preview" src="images/File1.png" alt=""/>
+            </div>
+
+        </div>
+    </div>
+    <footer class="menuCss">
+        <p align="center">Contact information: <a style="color: #0199d9" href="mailto:hemantc09@gmail.com">
+            hemantc09@gmail.com</a></p>
+    </footer>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>
+
+</body>
+</html>
+
